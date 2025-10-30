@@ -1,0 +1,47 @@
+body{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+h1{
+    margin-bottom: 20px;
+}
+#semaforo{
+    width: 100px;
+    background-color: #222;
+    padding: 70px;
+    margin: 0 auto 20px auto;
+    border-radius: 20px;
+}
+.luz{
+    width: 110px;
+    height: 110px;
+    margin: 15px auto;
+    border-radius: 50%;
+    background-color: #444;
+    transition: background-color 0.3s;
+}
+
+#botoes button{
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+/* Cor do botão*/ 
+#btnVermelho {background-color: #ff4c4c;}
+#btnAmarelo {background-color: #ffe600;}
+#btnVerde {background-color: #51ff00;}
+#btnAuto {background-color: #b4b4b4;}
+#btnParar {background-color: #ff9317;}
+
+
+/* Estilo das luzes acesas*/
+
+.acesa.vermelha {background-color: red;}
+.acesa.amarela {background-color: yellow;}
+.acesa.verde {background-color: green;}
+
+
