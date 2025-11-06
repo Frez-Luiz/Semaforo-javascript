@@ -40,9 +40,24 @@ function acenderVerde(){
 function modoAutomatico(){
     limpar();
     let estado =0;
-    intervalo = setInterval(()=>{})
+    intervalo = setInterval(()=>{
+        if(estado === 0) acenderVermelho();
+        else if(estado === 1) acenderAmarelo();
+        else if(estado === 2) acenderVerde();
+        estado = (estado + 1) % 3;
+    }, 1000)
 }
 
+function parar(){
+    clearInterval(intervalo);
+    limpar();
+}
+btnParar.onclick = parar;
 
+btnVermelho.onclick = acenderVermelho;
 
+btnAmarelo.onclick = acenderAmarelo;
 
+btnVerde.onclick = acenderVerde;
+
+btnAuto.onclick = modoAutomatico;
